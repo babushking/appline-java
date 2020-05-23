@@ -1,23 +1,20 @@
-public class JavaTask9 {
-  public static void main (String[] args) {
-    int[] nums = new int[10];
-    int min, max;
+import java.util.Scanner;
 
-    nums[0] = 99;
-    nums[1] = -10;
-    nums[1] = 100123;
-    nums[2] = 18;
-    nums[3] = -978;
-    nums[4] = 5623;
-    nums[5] = 463;
-    nums[6] = -9;
-    nums[7] = 287;
-    nums[8] = 49;
-    min = max = nums[0];
-    for (int i = 1; i < 10; i = i+1) {
-      if (nums[i] < min) min = nums[i];
-      if (nums[i] > max) max = nums[i];
+public class JavaTask9 {
+  public static void main(String[] args) {
+
+    Scanner massiv = new Scanner(System.in);
+    System.out.println("Введите длину массива: ");
+    int length = massiv.nextInt();
+    int[] box = new int[length];
+
+    System.out.println("Введите элементы массива:");
+    for (int i = 0; i < length; i++) {
+      box[i] = massiv.nextInt();
     }
-    System.out.println("min = " + min + ";" + "max = " + max);
+    System.out.print ("Создан массив (x2):");
+    for (int i = 0; i < length; i++) {
+            System.out.print (" " + box[i] * 2);
+    }
   }
 }
