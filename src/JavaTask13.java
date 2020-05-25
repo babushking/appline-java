@@ -14,7 +14,7 @@ public class JavaTask13 {
       System.out.println("Длины строк равны");
     }
       else if (a.length() > b.length() ) {
-        System.out.println(a);
+        System.out.println("В результате сравнения длиннее оказалась строка:  "  + a );
       }
         else {
           System.out.println("В результате сравнения длиннее оказалась строка:  "  + b );
