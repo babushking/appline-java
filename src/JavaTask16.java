@@ -2,9 +2,9 @@ import java.io.*;
 
 class JavaTask16 {
   public static void main(String[] args){
-    String s;
+    String s = null;
 
-    try (BufferedReader br = new BufferedReader(new FileReader ("D://Program Files//загрузки//задание 1.txt"))) {
+    try (BufferedReader br = new BufferedReader(new FileReader ("D://apps//appline-java//src//test.txt"))) {
       while ((s = br.readLine()) != null) {
         System.out.println(s);
       }

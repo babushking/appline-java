@@ -2,11 +2,11 @@ import java.io.*;
 
 class JavaTask18 {
   public static void main(String[] args) {
-    String s;
+    String s = null;
 
     int counter = 0;
     try {
-      BufferedReader br = new BufferedReader(new FileReader("D://Program Files//загрузки//задание 1.txt"));
+      BufferedReader br = new BufferedReader(new FileReader("D://apps//appline-java//src//test.txt"));
 
       while (true) {
         s = br.readLine();
@@ -34,7 +34,7 @@ class JavaTask18 {
       BufferedReader br = new BufferedReader(reader);
       System.out.println("Введите " + counter + " строк для записи в файл.");
       try {
-        FileWriter fw = new FileWriter("D://Program Files//загрузки//задание 1.txt");
+        FileWriter fw = new FileWriter("D://apps//appline-java//src//test.txt");
 
         do {
           System.out.print("^");

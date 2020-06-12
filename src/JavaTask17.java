@@ -3,10 +3,10 @@ import java.nio.Buffer;
 
 class JavaTask17 {
   public static void main(String[] args) {
-    String str;
+    String str = null;
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     System.out.println("Введите текст для записи в файл. Признак окончания ввода-строка 'stop'");
-    try (FileWriter fw = new FileWriter("D://test.txt")){
+    try (FileWriter fw = new FileWriter("D://apps//appline-java//src//test.txt")){
       do {
         System.out.print("^");
         str = br.readLine();
