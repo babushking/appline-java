@@ -11,12 +11,12 @@ class JavaTask17 {
         System.out.print("^");
         str = br.readLine();
 
-        if (str.compareTo("stop") == 0) break;
+        if (str.equals("stop")) break;
 
         str = str + "\r\n";
         fw.write(str);
 
-      } while(str.compareTo("stop") != 0);
+      } while(!str.equals("stop"));
     } catch(IOException exc) {
       System.out.println("Ошибка ввода-вывода: " + exc);
     }
