@@ -29,7 +29,7 @@ class JavaTask18 {
 
 
     if (counter >0){
-      String str;
+      String str = null;
       Reader reader = new InputStreamReader(System.in);
       BufferedReader br = new BufferedReader(reader);
       System.out.println("Введите " + counter + " строк для записи в файл.");
