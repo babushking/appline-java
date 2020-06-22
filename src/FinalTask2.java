@@ -35,8 +35,8 @@ public class FinalTask2 {
       current = arr[j];
       i = j - 1;
         while (i >= 0 && arr[i] > current) {
-        arr[i] = current;
         arr[i + 1] = arr[i];
+        arr[i] = current;
         i--;
       }
     }

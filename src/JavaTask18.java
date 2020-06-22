@@ -3,24 +3,17 @@ import java.io.*;
 class JavaTask18 {
   public static void main(String[] args) {
     String s = null;
-
     int counter = 0;
     try {
-      BufferedReader br = new BufferedReader(new FileReader("D://apps//appline-java//src//test.txt"));
-
+      BufferedReader br = new BufferedReader(new FileReader("test.txt"));
       while (true) {
         s = br.readLine();
-
         if (s == null) {
           break;
         }
-
         counter++;
         System.out.println(s);
-
-
       }
-
       System.out.println(counter + " строк прочитано");
     }
     catch (IOException exc) {
@@ -34,8 +27,7 @@ class JavaTask18 {
       BufferedReader br = new BufferedReader(reader);
       System.out.println("Введите " + counter + " строк для записи в файл.");
       try {
-        FileWriter fw = new FileWriter("D://apps//appline-java//src//test.txt");
-
+        FileWriter fw = new FileWriter("test.txt");
         do {
           System.out.print("^");
           str = br.readLine();
